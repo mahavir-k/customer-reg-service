@@ -7,6 +7,15 @@ public class CustomerRequest {
     private int contactNo;
     private String gender;
     private String emailid;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public int getCustId() {
         return custId;

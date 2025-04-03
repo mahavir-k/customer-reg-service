@@ -26,6 +26,8 @@ public class CustomerRegistrationService {
         customerEntity.setCustName(customerRequest.getCustName());
         customerEntity.setGender(customerRequest.getGender());
         customerEntity.setEmailId(customerRequest.getEmailid());
+        customerEntity.setStatus(customerRequest.getStatus());
+
 
 
         CustomerEntity entity = repository.save(customerEntity);
@@ -36,7 +38,9 @@ public class CustomerRegistrationService {
         response.setContactNo(customerEntity.getContactNo());
         response.setGender(customerEntity.getGender());
         response.setEmailId(customerEntity.getEmailId());
-
+        response.setCustAdd(customerEntity.getCustAdd());
+        response.getCustName(customerEntity.getCustName());
+        response.setStatus(customerEntity.getStatus());
 
         return response;
     }

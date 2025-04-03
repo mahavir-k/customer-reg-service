@@ -12,6 +12,15 @@ public class CustomerEntity {
     private String gender;
     private int contactNo;
     private String emailId;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getEmailId() {
         return emailId;

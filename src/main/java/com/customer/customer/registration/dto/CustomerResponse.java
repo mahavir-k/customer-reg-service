@@ -7,6 +7,15 @@ public class CustomerResponse {
     private String gender;
     private int contactNo;
     private String emailId;
+    private String status;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 
     public String getCustAdd() {
         return custAdd;
@@ -24,8 +33,8 @@ public class CustomerResponse {
         this.custId = custId;
     }
 
-    public String getCustName() {
-        return custName;
+    public String getCustName(String custName) {
+        return this.custName;
     }
 
     public void setCustName(String custName) {
