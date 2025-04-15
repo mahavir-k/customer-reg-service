@@ -9,14 +9,6 @@ public class CustomerRequest {
     private String emailid;
     private String status;
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
     public int getCustId() {
         return custId;
     }
@@ -25,20 +17,20 @@ public class CustomerRequest {
         this.custId = custId;
     }
 
-    public String getCustName() {
-        return custName;
-    }
-
-    public void setCustName(String custName) {
-        this.custName = custName;
-    }
-
     public String getCustAdd() {
         return custAdd;
     }
 
     public void setCustAdd(String custAdd) {
         this.custAdd = custAdd;
+    }
+
+    public String getCustName() {
+        return custName;
+    }
+
+    public void setCustName(String custName) {
+        this.custName = custName;
     }
 
     public int getContactNo() {
@@ -63,5 +55,13 @@ public class CustomerRequest {
 
     public void setEmailid(String emailid) {
         this.emailid = emailid;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

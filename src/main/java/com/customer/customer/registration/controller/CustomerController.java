@@ -4,10 +4,7 @@ import com.customer.customer.registration.dto.CustomerRequest;
 import com.customer.customer.registration.dto.CustomerResponse;
 import com.customer.customer.registration.service.CustomerRegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -21,5 +18,8 @@ public class CustomerController {
     public CustomerResponse SaveCustomer(@RequestBody CustomerRequest customer){
         return service.saveCustomer(customer);
     }
-    // Test commit
+    @GetMapping("/detail/{id}")
+    public boolean isCustomer(@PathVariable("id") int id) {
+        return service.isCustomer(id);
+    }
 }

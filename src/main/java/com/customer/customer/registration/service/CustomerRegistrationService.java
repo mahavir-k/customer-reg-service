@@ -44,4 +44,8 @@ public class CustomerRegistrationService {
 
         return response;
     }
+
+    public boolean isCustomer(int id) {
+        return repository.existsById(id);
+    }
 }
